@@ -1,13 +1,13 @@
-import pandas as pd
-import os
-import torch
+import pandas as PD
+import os as OS
+import torch as TO
 
 #Prepare Device
-device = ("cuda" if torch.cuda.is_available() else "cpu")
+device = ("cuda" if TO.cuda.is_available() else "cpu")
 
-train_df = pd.DataFrame(columns=["img_name","label"])
-train_df["img_name"] = os.listdir("Data/")
-for idx, i in enumerate(os.listdir("Data/")):
+train_df = PD.DataFrame(columns=["img_name","label"])
+train_df["img_name"] = OS.listdir("Data/")
+for idx, i in enumerate(OS.listdir("Data/")):
     if "baroque" in i:
         train_df["label"][idx] = 0
     if "cubism" in i:
