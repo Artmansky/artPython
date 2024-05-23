@@ -1,9 +1,5 @@
 import pandas as PD
 import os as OS
-import torch as TO
-
-#Prepare Device
-device = ("cuda" if TO.cuda.is_available() else "cpu")
 
 train_df = PD.DataFrame(columns=["img_name","label"])
 train_df["img_name"] = OS.listdir("Data/")
