@@ -1,6 +1,6 @@
 # artPython
 
-University Project - NN Based model that tries to recognise given art eras.
+University Project - CNN Based model that tries to recognise given art eras.
 
 ## Installation
 
